@@ -76,21 +76,15 @@ var etaStudente = parseInt(prompt("inserisci eta"));
 
 // Creare con questi dati un nuovo oggetto
 //  e inserirlo nell'array del punto precedente.
-var nuovoStudente = (nomeStudente + cognomeStudente + etaStudente);
-console.log(nuovoStudente);
-// var studenteCorrente = nuovoStudente;
-// var studenteCorrente  =  {
-// 'nome': '',
-// 'cognome': '',
-// 'eta': ''
-// };
-// function myFunction() {
-// var nuovoStudente = (nomeStudente + cognomeStudente + etaStudente);
-// var studenteCorrente = nuovoStudente.split(" ");
-//
-// console.log(studenteCorrente)
-// studenti.push(nuovoStudente);
-// console.log(studenti);
+
+var studenteCorrente  =  {
+'nome': nomeStudente,
+'cognome': cognomeStudente,
+'eta': etaStudente
+};
+console.log(studenteCorrente)
+studenti.push(studenteCorrente);
+console.log(studenti);
 
 
 })
