@@ -28,7 +28,6 @@ for (var key in studente) {
 
 // creare un array di oggetti "studente".
 
-
 var studenti =
 [
 {
@@ -61,11 +60,22 @@ var studenti =
 
 // Ciclare su tutti gli studenti e stampare
 // per ciascuno il nome e il cognome
+$(function () {
 
-for (var key in studenti) {
-    console.log(key);
-    console.log(studenti[key]);
-}
+$.each(studenti, function () {
+        console.log("nome: " + this.nome);
+        console.log("cognome: " + this.cognome);
+        console.log(" ");
+    });
+});
+// for (var key in studenti) {
+//     // console.log(key);
+//     console.log(studenti[1]);
+    // console.log(studenti[1][0]);
+    // console.log(studenti[2]);
+    // console.log(studenti[3]);
+    // console.log(studenti[4]);
+
 
 
 // tramite 3 prompt, chiedere all'utente il nome, il cognome e l'età di un nuovo studente.
@@ -82,7 +92,7 @@ var studenteCorrente  =  {
 'cognome': cognomeStudente,
 'eta': etaStudente
 };
-console.log(studenteCorrente)
+console.log(studenteCorrente);
 studenti.push(studenteCorrente);
 console.log(studenti);
 
