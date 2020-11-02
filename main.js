@@ -57,26 +57,19 @@ var studenti =
 },
 ];
 
-console.log(studenti);
+
+// Ciclare su tutti gli studenti e stampare
+// per ciascuno il nome e il cognome
+
+    console.log(studenti);
 
 for (var i = 0; i < studenti.length; i++) {
     var studenteCorrente= studenti[i];
     console.log(studenteCorrente);
 
-console.log(studenteCorrente.nome);
-console.log(studenteCorrente.cognome);
+    console.log(studenteCorrente.nome);
+    console.log(studenteCorrente.cognome);
 }
-// Ciclare su tutti gli studenti e stampare
-// per ciascuno il nome e il cognome
-
-// for (var key in studenti) {
-//     // console.log(key);
-//     console.log(studenti[1]);
-    // console.log(studenti[1][0]);
-    // console.log(studenti[2]);
-    // console.log(studenti[3]);
-    // console.log(studenti[4]);
-
 
 
 // tramite 3 prompt, chiedere all'utente il nome, il cognome e l'età di un nuovo studente.
