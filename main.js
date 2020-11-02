@@ -57,17 +57,18 @@ var studenti =
 },
 ];
 
+console.log(studenti);
 
+for (var i = 0; i < studenti.length; i++) {
+    var studenteCorrente= studenti[i];
+    console.log(studenteCorrente);
+
+console.log(studenteCorrente.nome);
+console.log(studenteCorrente.cognome);
+}
 // Ciclare su tutti gli studenti e stampare
 // per ciascuno il nome e il cognome
-$(function () {
 
-$.each(studenti, function () {
-        console.log("nome: " + this.nome);
-        console.log("cognome: " + this.cognome);
-        console.log(" ");
-    });
-});
 // for (var key in studenti) {
 //     // console.log(key);
 //     console.log(studenti[1]);
